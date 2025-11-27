@@ -1,14 +1,12 @@
-import "@/globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// app/layout.jsx
+import './globals.css'            // Relative path to globals.css
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 export const metadata = {
-  title: 'A Square Digital Marketing — SEO, PPC & Performance Marketing',
-  description: 'A Square Digital Marketing — Result-driven SEO, PPC, Lead Generation & Performance Marketing for businesses.',
-  icons: {
-    icon: '/favicon.ico'
-  }
-};
+  title: 'A Square Digital Marketing',
+  description: 'Digital Marketing Agency in UK',
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -19,5 +17,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  );
+  )
 }
